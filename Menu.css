@@ -1,0 +1,134 @@
+div.container {width:900px; margin:auto; border:groove #777; padding:50px; height:600px;}
+div.left {float:left; width:240px; padding:10px; border:1px dotted #0f0;}
+div.center {float:left; margin-left:50px; width:240px; padding:10px;  border:1px dotted #f00;}
+div.right {float:right; width:240px; padding:10px;  border:1px dotted #00f;}
+
+div.clear{width:100%; clear:both;}
+html { 
+background: url(https://wallpaperaccess.com/full/1317125.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1{
+    font-family: cursive;
+    font-weight: bolder;
+    color: #618685;
+    -webkit-text-stroke: 0.2px black;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+h2{
+    font-family: cursive;
+    font-weight: bolder;
+    color: #c5d5c5;
+    -webkit-text-stroke: 0.2px black;
+    
+}
+table{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: bolder;
+   
+}
+th{
+    color: #ffcc5c;
+    font-size: larger;
+}
+ td{
+     color:#cfe0e8;
+     text-shadow: black;
+ }
+ button{
+  background-color: #4CAF50; /* Green */
+  border: black;
+  color:black;
+  padding: 8px 20px;
+  box-shadow: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration-color: black;
+  display: inline-block;
+  font-size: medium;
+  margin-left: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+div {
+    box-shadow: 25px 25px 15px;
+    backdrop-filter: blur(12px);
+    filter: contrast(1.2);
+  }
+  #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 20px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

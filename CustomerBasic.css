@@ -1,0 +1,95 @@
+html { 
+    background: url(https://wallpaperaccess.com/full/1317125.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  div.container {width:500px; margin:auto; border:groove #777; border-radius: 30px; padding:50px; height:300px; margin-top: 150px;}
+  h1{
+    font-family: cursive;
+    font-weight:bold;
+    color: black;
+    text-shadow:
+    2px 2px 0 grey,
+  -1px -1px 0 white,  
+   1px -1px 0 black,
+   -1px 1px 0 grey,
+    1px 1px 0 black;
+}
+h2{
+    font-family: cursive;
+    font-weight: bolder;
+    color: black;
+   
+}
+  label{
+      color: white;
+      background-color:rgb(19, 18, 18);
+      -webkit-text-stroke: 0.5px black;
+      font-size: medium;
+      font-family: sans-serif;
+  }
+  input{
+    background-color: rgb(218, 214, 214);
+    color: black;
+  }
+  h3{
+    font-family: cursive;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.849);
+    font-size: large;
+    font-stretch: expanded;
+    font-kerning: auto;
+    
+  }
+  button{
+    background-color: #4CAF50; /* Green */
+    border: black;
+    color:black;
+    padding: 8px 20px;
+    box-shadow: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration-color: black;
+    display: inline-block;
+    font-size: medium;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+div {
+    box-shadow: 25px 25px 15px;
+    backdrop-filter: blur(10px);
+  }
+  select{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: normal;
+    font-weight: bolder;
+    color:black;
+    font-size: medium;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

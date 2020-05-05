@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Customer Basic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CustomerBasic.css">
+    </head>
+    <script src="" async defer></script>
+    <body>
+        <div class="container">
+        <div class="bg.img"></div>
+        <form action="CustomerBasics.php" method="POST" class="go-right"> 
+            <h1 align="center">Welcome!</h1>
+            <h2>Let's Get Started wtih your Order!</h2>
+                <label for="NAME"><strong>Name:</strong></label>
+              <input id="NAME"name="CustomerName"type="text" placeholder="Name" required>
+            <br>
+            <br>
+                <label for="TableNumber"><strong>Table Number:</strong></label>
+                <input id="TableNumber" name="Tablenumber" type="number" placeholder="Table Number" min="1" required>
+            <br>
+            <h3><strong>Select whether you prefer Eating Veg or Non-Veg</strong></h3>
+                <button type="submit" name="submit" style="vertical-align: middle;"><span>Veg</span></button>
+                <button type="submit" name="submit1" style="vertical-align: middle;"><span>Non-Veg</span></button>
+            <br>
+            <br> 
+        </form>
+    </div>   
+    </body>
+</html>
